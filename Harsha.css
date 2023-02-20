@@ -475,13 +475,13 @@ ul.myUL {
     .skills .skills-content .column .info{
         display: flex;
         margin-bottom: 5px;
-        width: 100%;
+        width: 50%;
         align-items: center;
         justify-content: space-between;
     }
     .skills .skills-content .column .line{
         height:5px;
-        width: 100%;
+        width: 50%;
         background: lightgrey;
         position: relative;
     }
