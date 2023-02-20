@@ -460,13 +460,28 @@ ul.myUL {
     .skills .skills-content .column .info{
         display: flex;
         margin-bottom: 5px;
-        width: 150%;
+        width: 170%;
         align-items: center;
         justify-content: space-between;
     }
     .skills .skills-content .column .line{
         height:5px;
-        width: 150%;
+        width: 170%;
+        background: lightgrey;
+        position: relative;
+    }
+}
+@media (max-width: 530px){
+    .skills .skills-content .column .info{
+        display: flex;
+        margin-bottom: 5px;
+        width: 120%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .skills .skills-content .column .line{
+        height:5px;
+        width: 120%;
         background: lightgrey;
         position: relative;
     }
