@@ -1,196 +1,427 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1.0">
-    <title>Harsha's webpage</title>
-    <link rel="stylesheet" href="Harsha.css">
-    <script src="https://kit.fontawesome.com/645c6ddd13.js" crossorigin="anonymous"></script>
-    <script src="https://code.jquery.com/jquery-3.6.3.min.js"></script>
-</head>
-<body>
-    <div class="scroll-up-btn">
-        <i class="fas fa-angle-up"></i>
-    </div>
-    <nav class="navbar">
-        <div class="max-width">
-            <ul class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-            <div class="menu-btn">
-                <i class="fas fa-bars"></i>
-            </div>
-        </div>
-    </nav>
-    <section class="home" id="home">
-        
-        <div class="max-width">
-            <div class="home-content">  
-                <!-- <div>
-                    Hello there!
-                </div>
-                <div>
-                    This is <span class="name">Harsha Vardhan</span>
-                </div> -->
-            </div>
-        </div>
-    </section>
-    <section class="about" id="about">
-        <div class="max-width">
-            <div class="about-content">
-                I am an undergraduate student at CSE department, IIITDM Kancheepuram. I love playing badminton and I am interested in watching updates related to Stock Market.
-                Currently I'm interested in learning Machine learning in healthcare sector.
-                I am always on time for organized events, work-related or otherwise.
-                I am organized candidate successful at managing multiple priorities with a positive attitude and Willing to take on added responsibilities to meet goals.
-            </div>
-        </div>
-    </section>
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+html,body
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.max-width{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+
+.navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    background: crimson;
+    z-index: 999;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: crimson;
+}
+
+.navbar .max-width{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
 
 
-    <section class="education" id="education">
-        <div class="max-width">
-            <div class="education-content">
-                <h2>Education</h2>
-                <br><br><br>
-                <div>
-                    <div class="middle">
-                        <ul class="myUL">
-                            <li>Sri Chaitanya School-Hyderabad,Telangana</li><br>
-                            <li>Computer Science engineering in IIITDM Kancheepuram</li><br>
-                        </ul>
-                    </div>
-                    <br>
-                    <u>Work/Experience</u>
-                    <br><br>
-                    <div class="middle">
-                        <br>
-                        DSA PROJECT
-                        <br>
-                        <ul class="myUL">
-                            <br>
-                            <li>Creating and updating Aadhar card using data structures.</li><br>
-                            <li>Changes will be updated in the database.</li><br>
-                            <li>Code written in C language.</li><br>
-                        </ul>
-                    </div>
-                    <br><br>
-                    <div class="middle">
-                        <br>
-                        ML PROJECT
-                        <br>
-                        <ul class="myUL">
-                            <br>
-                            <li>Recognizing Faces and Traffic Signs using Eigen faces.</li><br>
-                            <li>An application of PCA/SVD.</li><br>
-                            <li>Code written in PYTHON.</li><br>
-                        </ul>
-                    </div> 
-                    <div class="middle">
-                        <br>
-                        My analysis on Research papers
-                        <br>
-                        <ul class="myUL">
-                            <br>
-                            <li><a href="koo.html" class="paper">What's Kooing? Social Network, Koo</a></li><br>
-                            <li><a href="health.html" class="paper">Modern AI/ML Methods for Healthcare</a></li><br>
-                        </ul>
-                    </div>
-                            <br><br><br><br><br><br><br><br>
-                        </div>
-            </div>
-        </div>
-    </section>
-    <section class="contactN" id="skills">
-        <div class="max-width">
-            <div class="contactN-content">
-                <div class="middle">
-                    <div class="middle myUL">
-                    <h2 class="title">My skills</h2>
-                    <div class="column">
-                        <div class="bars">
-                            <div class="info">
-                                <span>HTML</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="line html"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span>CSS</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="line css"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span>C/C++</span>
-                                <span>80%</span>
-                            </div>
-                            <div class="line c"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span>DSA</span>
-                                <span>70%</span>
-                            </div>
-                            <div class="line DSA"></div>
-                        </div>
-                        <div class="bars">
-                            <div class="info">
-                                <span>ML</span>
-                                <span>50%</span>
-                            </div>
-                            <div class="line ML"></div>
-                        </div>
-                        
-                    
-                    
-                    <!-- <ul class="myUL">
-                        <br>
-                        <li>C/C++ programming</li><br>
-                        <li>DSA</li><br>
-                        <li>Machine Learning</li><br>
-                        <li>Web Development</li><br>
-                        <li>Problem Solving</li><br>
-                    </ul> -->
-                </div>
-                </div>
-            </div>
-        </div>
-    </section>
+.navbar .menu li{
+    list-style: none;
+    display: inline-block;
+}
+.navbar .menu li a{
+    color:rgb(132, 130, 139);
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 28px;
+    transition: color 0.3s ease;
+}
 
-    <section class="contact" id="contact">
-        <div class="max-width">
-            <div class="contact-content">    
-                <p class="contact-content1">
-                    <u>Contact Details</u> <br><br>
-                    Mobile Number:6302439244 <br><br>
-                    Email Id:harshavardhan.govind@gmail.com <br><br>
+.navbar .menu li a:hover{
+    color: white;
+}
 
 
-                </p>
-                <form action="mailto:harshavardhan.govind@gmail.com" class="mail" method="post" enctype="text/plain">
-                    <u>Write me a message</u>:&nbsp<input type="text" name="sname">&nbsp
-                    <input type="submit" value="Send">
-                    <br><br>
-                </form>
-                <br><br><br><br>
-                <a href="https://instagram.com/govind.harshavardhan?igshid=ZDdkNTZiNTM=" class="icon , instagram" target="_blank"><i class="fa-brands fa-instagram"></i></a>
-                <a href="https://github.com/harshavardhan784" class="icon , github" target="_blank"><i class="fa-brands fa-github"></i></a>
-                <a href="http://www.linkedin.com/in/govind-harsha-vardhan-b18558231" class="icon , linkedin" target="_blank" ><i class="fa-brands fa-linkedin"></i></a>
-                <br>
-                <div class="copyright">
-                    <h1>© Harsha Vardhan.</h1>
-                </div>
-            </div>
-        </div>
-    </section>
+.menu-btn{
+    color: #fff;
+    font-size: 23px;
+    cursor: pointer;
+    display: none;
+}
+
+.scroll-up-btn{
+    position: fixed;
+    height: 45px;
+    width: 42px;
+    background: crimson;
+    right: 30px;
+    bottom: 10px;
+    line-height: 45px;
+    color: #fff;
+    z-index: 9999;
+    font-size: 30px;
+    border-radius: 6px;
+    cursor: pointer;
+    opacity: 0;
+    pointer-events: none;
+    transition: all 0.3s ease;
+}
+.scroll-up-btn .show{
+    opacity: 0;
+    pointer-events: auto;
+}
+.home{
+    display: flex;
+    background: url(remember2.png) no-repeat center;
+    /* background-attachment: fixed; */
+    height: 100vh;
+    /* background-size:cover ; */
+    color: #fff;
+    min-height: 500px;
+    font-family: 'sans-serif';
+}
+.home .max-width{
+    margin: auto 0 auto 40px;
+}
+.home .home-content{
+    margin-top: 70px;
+    font-size: 35px;
+}
+.name{
+   font-size: 60px;
+}
+
+.about{
+    display: flex;
+    /* background: url("https://cutewallpaper.org/21/web-background-images/Web-Design-When-the-Background-Becomes-the-Main-Stage-.png") no-repeat center; */
+    background: url("aboutme.png") no-repeat center;
+    background-attachment: fixed;
+    /* height: 100vah; */
+    background-size:cover ;
+    color: #fff;
+    min-height: 900px;
+    font-family: 'Hind Siliguri', sans-serif;
+}
+.about .max-width{
+    margin: auto 0 auto 40px;
+}
+.about .about-content{
+    margin-left: 500px;
+    margin-top: 100px;
+    font-size: 25px;
+}
+
+
+.education{
+    display: flex;
+    background: url("education.png") no-repeat center;
+    /* background-attachment: fixed; */
+    text-align: center;
+    /* height: 100vh; */
+    background-size:cover ;
+    color: #fff;
+    /* min-height: 100px; */
+    font-family: 'Hind Siliguri', sans-serif;
     
-    <script src="final.js"></script>
+}
+.education .max-width{
+    margin: auto 0 auto 40px;
+}
+.education .education-content .paper{
+    color: rgb(214, 201, 11);
+}
+.middle{
+    text-align: center;
+}
+ul.myUL {
+    display: inline-block;
+    text-align: left;
+}
+.education .education-content{
+    margin-top: 70px;
+    text-align: center;
+}
 
-</body>
-</html>
+.contact{
+    display: flex;
+    background: url("contact.jpg") no-repeat center;
+    /* background-attachment: fixed; */
+    text-align: center;
+    height: 100vh;
+    font-size: 30px;
+    background-size:cover ;
+    color: #fff;
+    /* min-height: 100px; */
+    font-family: 'Hind Siliguri', sans-serif;
+}
+
+.contact-content{
+    font-family: sans-serif;
+    /* background-color:rgb(116, 189, 196); */
+    margin-top: 0vh;
+    text-align:center;
+    padding: 50px;
+}
+
+
+.skills{
+    display: flex;
+    background: url("skills.png") no-repeat center;
+    /* background-attachment: fixed; */
+    text-align: center;
+    height: 100vh;
+    font-size: 30px;
+    background-size:cover ;
+    color: #fff;
+    /* min-height: 100px; */
+    font-family: 'Hind Siliguri', sans-serif;
+    
+}
+.skills .max-width{
+    margin: auto 0 auto 40px;
+}
+
+.skills .skills-content .column .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .column .info{
+    display: flex;
+    margin-bottom: 5px;
+    width: 300%;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .column span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .column .line{
+    height:5px;
+    width: 300%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .column .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .column .c::before{
+    width: 80%;
+}
+.skills .skills-content .column .DSA::before{
+    width: 70%;
+}
+.skills .skills-content .column .ML::before{
+    width: 50%;
+}
+.skills .skills-content .column .html::before{
+    width: 80%;
+}
+.skills .skills-content .column .css::before{
+    width: 70%;
+}
+
+
+.icon{
+    font-size: 40px;
+    margin: 3px;
+}
+
+.instagram a.active,a:hover{
+    background:white;
+    color: rgb(101, 40, 51);
+}
+
+
+.github a.active,a:hover{
+    background:black;
+    background-color: black ;
+    color: black    ;
+}
+
+.linkedin a.active,a:hover{
+    background:none;
+    /* color: rgb(5, 6, 91); */
+    color: black;
+}
+
+.instagram :hover{
+    /* background-color: rgb(137, 49, 84); */
+    /* color: white; */
+    background: none;
+    color: rgb(101, 40, 51);
+}
+
+.linkedin :hover{
+    background: none;
+    color: rgb(9, 9, 96);
+}
+
+.github :hover{
+    background: none;
+    color: black;
+}
+
+
+
+@media (max-width:480px) {
+    .home .home-content{
+        margin-top: 70px;
+        font-size: 25px;
+    }
+    .name{
+        font-size: 30px;
+    }
+}
+
+@media (max-width:1360px) {
+    .about .about-content{
+        margin-left: 300px;
+        margin-top: 70px;
+        font-size: 25px;
+    }
+    
+}
+@media (max-width:1150px) {
+    .about .about-content{
+        margin-left: 200px;
+        margin-top: 70px;
+        font-size: 25px;
+    }
+    
+}
+@media (max-width:450px) {
+    .about{
+        display: flex;
+        /* background: url("https://cutewallpaper.org/21/web-background-images/Web-Design-When-the-Background-Becomes-the-Main-Stage-.png") no-repeat center; */
+        background: url("aboutmedia.png") no-repeat center;
+        /* background-attachment: fixed; */
+        /* height: 100vah; */
+        background-size:cover ;
+        color: #fff;
+        min-height: 900px;
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+
+    .about .about-content{
+        margin-left: 2px;
+        margin-top: 90%;
+        font-size: 10px;
+        border-top:50px;
+        padding-top : 50px;
+    }
+    
+}
+@media (max-width:709px) {
+    .about .about-content{
+        margin-left: 2px;
+        margin-top: 110%;
+        font-size: 16px;
+    }
+
+    .contact{
+        display: flex;
+        background: url("contact.jpg") no-repeat center;
+        /* background-attachment: fixed; */
+        text-align: center;
+        height: 100vh;
+        font-size: 20px;
+        background-size:cover ;
+        color: #fff;
+        /* min-height: 100px; */
+        font-family: 'Hind Siliguri', sans-serif;
+    }
+    
+    .contact-content{
+        font-family: sans-serif;
+        /* background-color:rgb(116, 189, 196); */
+        margin-top: 0vh;
+        text-align:center;
+        /* padding: 50px; */
+    }
+    .contact-content .contact-content1{
+        font-size: 12   px;
+    }
+}
+
+
+@media (max-width: 930px){
+    
+    .max-width{
+        padding: 0 50px;
+    }
+    .menu-btn{
+        display: block;
+        z-index: 999;
+    }
+    .menu-btn i.active::before{
+        content: "\f00d";
+    }
+    .navbar .menu{
+        position: fixed;
+        height: 100vh;
+        width: 100%;
+        left: -100%;
+        top:0;
+        background: #111;
+        text-align: center;
+        padding-top: 80px;
+        transition: all 0.3s ease;
+    }
+    .navbar .menu.active{
+        left: 0;
+        content: "\f00d";
+    }
+    .navbar .menu li{
+        display: block;
+    }
+    .navbar .menu li a{
+        display: inline-block;
+        margin: 20px 0;
+        font-size: 25px;
+
+    }
+    @media (max-width: 530px){
+    .skills .skills-content .column .info{
+        display: flex;
+        margin-bottom: 5px;
+        width: 100%;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .skills .skills-content .column .line{
+        height:5px;
+        width: 100%;
+        background: lightgrey;
+        position: relative;
+    }
+}
+}
+
+.contact-content .copyright{
+    color: #111;
+    margin-bottom: 0%;
+    font-size: 10px;
+}
