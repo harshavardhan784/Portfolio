@@ -181,7 +181,7 @@ ul.myUL {
 }
 
 
-.skills{
+.contactN{
     display: flex;
     background: url("skills.png") no-repeat center;
     /* background-attachment: fixed; */
@@ -194,55 +194,9 @@ ul.myUL {
     font-family: 'Hind Siliguri', sans-serif;
     
 }
-.skills .max-width{
+.contactN .max-width{
     margin: auto 0 auto 40px;
 }
-
-.skills .skills-content .column .bars{
-    margin-bottom: 15px;
-}
-.skills .skills-content .column .info{
-    display: flex;
-    margin-bottom: 5px;
-    width: 300%;
-    align-items: center;
-    justify-content: space-between;
-}
-.skills .skills-content .column span{
-    font-weight: 500;
-    font-size: 18px;
-}
-.skills .skills-content .column .line{
-    height:5px;
-    width: 300%;
-    background: lightgrey;
-    position: relative;
-}
-.skills .skills-content .column .line::before{
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 80%;
-    left: 0;
-    top: 0;
-    background: crimson;
-}
-.skills .skills-content .column .c::before{
-    width: 80%;
-}
-.skills .skills-content .column .DSA::before{
-    width: 70%;
-}
-.skills .skills-content .column .ML::before{
-    width: 50%;
-}
-.skills .skills-content .column .html::before{
-    width: 80%;
-}
-.skills .skills-content .column .css::before{
-    width: 70%;
-}
-
 
 .icon{
     font-size: 40px;
@@ -403,35 +357,6 @@ ul.myUL {
         font-size: 25px;
 
     }
-}
-@media (max-width: 530px){
-    .skills .skills-content .column .info{
-        display: flex;
-        margin-bottom: 5px;
-        width: 100%;
-        align-items: center;
-        justify-content: space-between;
-    }
-    .skills .skills-content .column .line{
-        height:5px;
-        width: 100%;
-        background: lightgrey;
-        position: relative;
-    }
-    .navbar{
-    position: fixed;
-    width: 100%;
-    padding: 30px 0;
-    background: crimson;
-    z-index: 999;
-    font-family: sans-serif;
-    transition: all 0.3s ease;
-}
-
-.navbar.sticky {
-    padding: 15px 0;
-    background: crimson;
-}
 }
 
 .contact-content .copyright{
