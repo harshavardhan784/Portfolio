@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300&display=swap');
+
+.content{
+    margin: 40px 40px 40px 40px;
+    background-color: antiquewhite;
+    font-size: 25px;
+}
+
+.heading{
+    font-size: 40px;
+    text-align: center;
+    color: green;
+}
