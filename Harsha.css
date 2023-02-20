@@ -181,7 +181,7 @@ ul.myUL {
 }
 
 
-.contactN{
+.skills{
     display: flex;
     background: url("skills.png") no-repeat center;
     /* background-attachment: fixed; */
@@ -194,8 +194,53 @@ ul.myUL {
     font-family: 'Hind Siliguri', sans-serif;
     
 }
-.contactN .max-width{
+.skills .max-width{
     margin: auto 0 auto 40px;
+}
+
+.skills .skills-content .column .bars{
+    margin-bottom: 15px;
+}
+.skills .skills-content .column .info{
+    display: flex;
+    margin-bottom: 5px;
+    width: 300%;
+    align-items: center;
+    justify-content: space-between;
+}
+.skills .skills-content .column span{
+    font-weight: 500;
+    font-size: 18px;
+}
+.skills .skills-content .column .line{
+    height:5px;
+    width: 300%;
+    background: lightgrey;
+    position: relative;
+}
+.skills .skills-content .column .line::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 80%;
+    left: 0;
+    top: 0;
+    background: crimson;
+}
+.skills .skills-content .column .c::before{
+    width: 80%;
+}
+.skills .skills-content .column .DSA::before{
+    width: 70%;
+}
+.skills .skills-content .column .ML::before{
+    width: 50%;
+}
+.skills .skills-content .column .html::before{
+    width: 80%;
+}
+.skills .skills-content .column .css::before{
+    width: 70%;
 }
 
 .icon{
