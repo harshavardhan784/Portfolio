@@ -403,7 +403,8 @@ ul.myUL {
         font-size: 25px;
 
     }
-    @media (max-width: 530px){
+}
+@media (max-width: 530px){
     .skills .skills-content .column .info{
         display: flex;
         margin-bottom: 5px;
@@ -417,6 +418,19 @@ ul.myUL {
         background: lightgrey;
         position: relative;
     }
+    .navbar{
+    position: fixed;
+    width: 100%;
+    padding: 30px 0;
+    background: crimson;
+    z-index: 999;
+    font-family: sans-serif;
+    transition: all 0.3s ease;
+}
+
+.navbar.sticky {
+    padding: 15px 0;
+    background: crimson;
 }
 }
 
